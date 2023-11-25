@@ -12,9 +12,7 @@
           @foreach ($var as $key => $value)
             <tr>
               <td class="whitespace-nowrap px-6 py-4 font-medium inline-block align-top">{{ $value->id }}</td>
-              <td class="whitespace-nowrap px-6 py-4">
-
-                <div id="accordion-collapse" data-accordion="collapse">
+              <td class="whitespace-nowrap px-6 py-4">                
 
                   <h2>
                     <button id="{{ $value->id }}" type="button" class="flex items-center justify-between rounded-t-xl w-8/12 p-2 bg-white manualCollapse">

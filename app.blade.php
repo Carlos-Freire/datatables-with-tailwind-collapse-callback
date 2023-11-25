@@ -20,12 +20,8 @@
   @vite([
       'resources/flowbite/dist/flowbite.css',
       'resources/css/app.css',
-    //   'resources/css/jquery.dataTables.css',
       'resources/flowbite/dist/flowbite.js',
       'resources/js/app.js',
-    //   'resources/js/jquery.min.js',
-    //   'resources/js/jquery.dataTables.js',
-    //   'resources/js/customDataTable.js',
   ])
 
 </head>

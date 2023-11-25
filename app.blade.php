@@ -49,7 +49,7 @@
     </main>
   </div>
   <script>
-    let table = $('#lista').DataTable({
+    let table = $('#list').DataTable({
         "drawCallback": function () {
             $('.manualCollapse').on('click', function () {
                 var obj = $('#manual-collapse-'+this.getAttribute('id'));

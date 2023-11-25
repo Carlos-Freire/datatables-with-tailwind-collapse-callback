@@ -34,7 +34,6 @@
                     </div>
 
                   </div>
-                </div>
 
               </td>
               <td class="whitespace-nowrap px-6 py-4 align-top">{{ $value->anything2 }}</td>

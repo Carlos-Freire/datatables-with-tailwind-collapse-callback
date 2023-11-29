@@ -1,4 +1,4 @@
-# datatables-with-tailwind-collapse-callback
+# datatables with tailwind + javascript div collapse on datatable
 
 Dependencies:
 Laravel 10;

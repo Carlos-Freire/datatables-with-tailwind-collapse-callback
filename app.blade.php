@@ -45,19 +45,15 @@
     </main>
   </div>
   <script>
+    function getElementId(obj) {
+      var divClass = document.getElementById('manual-collapse-' + obj.id);
+      if (divClass.style.display === "block") {
+        divClass.style.display = "none";
+      } else {
+        divClass.style.display = "block";
+      }
+    }
     let table = $('#list').DataTable({
-        "drawCallback": function () {
-            $('.manualCollapse').on('click', function () {
-                var obj = $('#manual-collapse-'+this.getAttribute('id'));
-                var hasClass = $(obj).attr('class');
-                if(hasClass.indexOf('hidden') > -1){
-                    $(obj.removeClass('hidden').addClass('show'))
-                }
-                else{
-                    $(obj.removeClass('show').addClass('hidden'))
-                }
-            });
-        },
         "autoWidth": false,
         "order": [
             [1, "asc"]

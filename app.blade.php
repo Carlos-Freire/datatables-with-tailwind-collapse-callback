@@ -54,6 +54,17 @@
       }
     }
     let table = $('#list').DataTable({
+      "drawCallback": function() {
+        function getElementId(obj) {
+            var divClass = document.getElementById('manual-collapse-' + obj.id);
+            if (divClass.style.display === "block") {
+                divClass.style.display = "none";
+            } else {
+                divClass.style.display = "block";
+            }
+            // console.log(obj.id);
+
+        };
         "autoWidth": false,
         "order": [
             [1, "asc"]

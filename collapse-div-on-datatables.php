@@ -4,7 +4,7 @@
           <tr>
             <th scope="col" class="px-6 py-4"></th>
             <th scope="col" class="px-6 py-4"><i class="fa fa-list" aria-hidden="true"></i><i
-                class="fa fa-user-o fa-lg mr-2"></i>-><small>HISTÓRICO</small></th>
+                class="fa fa-user-o fa-lg mr-2"></i></th>
             <th scope="col" class="px-6 py-4"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></th>
           </tr>
         </thead>
@@ -15,7 +15,8 @@
               <td class="whitespace-nowrap px-6 py-4">                
 
                   <h2>
-                    <button id="{{ $value->id }}" type="button" class="flex items-center justify-between rounded-t-xl w-8/12 p-2 bg-white manualCollapse">
+                    <button id="{{ $value->id }}" type="button"
+                      class="flex items-center justify-between rounded-t-xl w-8/12 p-2 bg-white" onclick="getElementId(this);">
 
                       <span>
                         <i class="fa fa-list mr-2" aria-hidden="true"></i>
